@@ -3,8 +3,7 @@ import * as ReactDOMClient from "react-dom/client";
 
 import App from "./App";
 
-const rootElement = document.getElementById("root");
-const root = ReactDOMClient.createRoot(rootElement);
+const root = ReactDOMClient.createRoot(document.getElementById("root")as Element);
 
 root.render(
   <StrictMode>
